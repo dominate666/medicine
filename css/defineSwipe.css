@@ -1,0 +1,70 @@
+.swiper-container {
+  width: 573px;
+  height: 375px;
+  position: relative;
+  margin: 0;
+  float: left;
+}
+.swiper-container .mask{
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  background: #5c5f5f;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  padding-left: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.swiper-container .mask a{
+    color: #ffffff;
+    font-size: 14px;
+    display: inline-block;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   
+}
+.swiper-wrapper{
+
+}
+.swiper-slide swiper-slide-active{
+
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-pagination{
+  cursor: pointer;
+}
+.swiper-pagination.swiper-pagination-bullets{
+  text-align: right;
+}
+.swiper-pagination .swiper-pagination-bullet{
+  background: #ffffff;
+}
+.swiper-pagination .swiper-pagination-bullet:last-child{
+  margin-right: 50px;
+}
+/* .swiper-pagination .swiper-pagination-bullet-active{
+  background: #ffffff;
+} */

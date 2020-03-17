@@ -7,7 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/defineSwipe.css">
+    <style>
+        /* .swiper-pagination.swiper-pagination-bullets{
+            text-align: right;
+        }
+        .swiper-pagination .swiper-pagination-bullet:last-child{
+            margin-right: 50px;
+        } */
+        
+
+       
+    </style>
 </head>
+
 
 <body>
     <div id="main">
@@ -44,9 +58,9 @@
                 <div class="info_tip">
                     <a href="javascript:void">
                         <img src="img/tell.png" alt="">
-                        <span>通知公告</span>
+                        <span class="announce">通知公告</span>
                     </a>
-                    <span>展示中医药相关产业通知事项展示中医药相关事项</span>
+                    <a href="#"> <span class="microsoft marquee" style="display:inline-block">展示中医药相关产业通知事项展示中医药相关事项</span></a>
                 </div>
                 <div class="info_search">
                     <form>
@@ -60,9 +74,44 @@
         <!-- banner -->
         <div id="banner" class="banner">
             <div class="banner_main clearfix">
-                <div class="banner_main_img">
-                    <img src="img/left_pic.png" alt="" width="100%" height="100%">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                                <img src="img/left_pic.png" alt="" width="100%" height="100%">
+                            
+                        </div>
+                        <div class="swiper-slide">
+                                <img src="img/left_pic.png" alt="" width="100%" height="100%">
+                            
+                        </div>
+                        <div class="swiper-slide">
+                                <img src="img/left_pic.png" alt="" width="100%" height="100%">
+                            
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <div class="banner_main_img">
+                                <img src="img/left_pic.png" alt="" width="100%" height="100%">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner_main_img">
+                                <img src="img/left_pic.png" alt="" width="100%" height="100%">
+                            </div>
+                        </div> -->
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- mask -->
+                    <div class="mask">
+                        <a href="#">中中医药相关文献报道中医药相关文献报道中中医药相关文献报道中医药相关文献报道</a>
+                    </div>
+
                 </div>
+
+
+
                 <div class="banner_message clearfix">
                     <div class="banner_message_top clearfix ">
                         <span>行业要闻</span>
@@ -75,7 +124,7 @@
                         </p>
                         <ul class="clearfix">
                             <li>
-                                <a href="javasript:void">中医药相关文献报道中医药相关文献报道</a>
+                                <a href="javasript:void">中中医药相关文献报道中医药相关文献报道</a>
                                 <span>2020-03-3</span>
                             </li>
                             <li>
@@ -238,14 +287,8 @@
                     <a href="#">联系我们<span>|</span></a>
                     <a href="#">网站声明<span>|</span></a>
                     <a href="#">关于我们</a>
-                    <!-- <ul class="clearfix">
-                        <li></li>
-                        <li>|</li>
-                        <li></li>
-                        <li></li>
-                    </ul> -->
                 </div>
-                <p>主办&nbsp;&nbsp;:&nbsp;&nbsp;兰州市城关区委 兰州市城关人民政府 承办:兰州市城关区信息办</p>
+                <p>主办&nbsp;&nbsp;:&nbsp;&nbsp;兰州市城关区委 兰州市城关人民政府&nbsp;&nbsp;&nbsp;承办&nbsp;&nbsp;:&nbsp;&nbsp;兰州市城关区信息办</p>
                 <p>地址&nbsp;&nbsp;:&nbsp;&nbsp;兰州市武都路48号 建议用1920*1080分辨率浏览 版权所有,未经许可,不得复制,转载</p>
                 <p>网站标识码&nbsp;&nbsp;:&nbsp;&nbsp;62010222004 备案:陇ICP备17005264号-1 干公网安备620010020001</p>
             </div>
@@ -255,3 +298,13 @@
 </body>
 
 </html>
+<script src="js/swiper.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        autoplay : 2000,
+        loop:true,
+        pagination: '.swiper-pagination',
+        // paginationClickable:true
+        
+    });
+</script>

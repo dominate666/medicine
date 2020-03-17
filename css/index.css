@@ -50,6 +50,34 @@ ul {
 }
 
 /* 公告 */
+.marquee {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 50s linear infinite;
+    vertical-align: middle;
+}
+
+.marquee:hover {
+    animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { text-indent: 2em }
+    100% { text-indent: -50em }
+}
+
+/* Make it pretty */
+.microsoft {
+    padding-left: 0.5em;
+    position: relative;
+    font: 12px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+}
+
+
 .info {
     width: 100%;
     height: 40px;
@@ -76,27 +104,21 @@ ul {
     display: inline-block;
     height: 24px;
     line-height: 24px;
-    margin-right: 14px;
-
+    /* margin-right: 14px; */
 }
-
 .info_tip a img {
     vertical-align: middle;
     float: left;
     border: none;
 }
-
+.info_tip .announce{
+    color: #717171;
+}
 .info_tip a span {
     margin-left: 16px;
-    color: #717171;
     font-weight: 600;
-
-}
-
-.info_tip span {
     color: #c3c3c3
 }
-
 .info_main .info_search {
     float: right;
     width: 340px;
