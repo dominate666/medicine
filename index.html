@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/defineSwipe.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -21,12 +22,12 @@
         <!-- nav -->
         <nav id="nav" class="nav">
             <div class="nav_main main_width">
-                    <a href="javasript:void">首页</a>
-                    <a href="javasript:void">企业介绍</a>
-                    <a href="javasript:void">行业资讯</a>
-                    <a href="javasript:void">关于我们</a>
-                    <a href="javasript:void">资料下载</a>
-                    <a href="javasript:void">联系我们</a>
+                <a href="javasript:void">首页</a>
+                <a href="javasript:void">企业介绍</a>
+                <a href="javasript:void">行业资讯</a>
+                <a href="javasript:void">关于我们</a>
+                <a href="javasript:void">资料下载</a>
+                <a href="javasript:void">联系我们</a>
             </div>
         </nav>
         <!-- tip -->
@@ -250,7 +251,9 @@
                 </div>
             </div>
             <div class="nav_link main_width">
-                 
+              
+               
+
             </div>
         </div>
 
@@ -287,13 +290,10 @@
     });
 </script>
 <script>
-   
-   let nav_main_as=$(".nav_main a")
-   let nav_links=$(".nav_link_list .nav_link")
-   nav_main_as.click(function(){
-    let i = $(this).index();
-    nav_links.eq(i).show().siblings().hide();
-   })
-
-
+    let nav_main_as = $(".nav_main a")
+    let nav_links = $(".nav_link_list .nav_link")
+    nav_main_as.click(function () {
+        let i = $(this).index();
+        nav_links.eq(i).show().siblings().hide();
+    })
 </script>

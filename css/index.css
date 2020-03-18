@@ -29,6 +29,7 @@ body{
     float: left;
     width: 215px;
     font-size: 16px;
+    text-align: center;
 }
 .nav_main a:last-child{
     width: 125px;
@@ -455,12 +456,3 @@ display: -webkit-box;
 
 
 
-
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-}
