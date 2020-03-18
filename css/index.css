@@ -1,16 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
+.tab{
+    display: none;
 }
-
-
-
-a {
-    text-decoration: none;
+.show{
+    display: block;
 }
-
-ul {
-    list-style: none;
+body{
+    height: 1000px;
 }
 
 /* 顶部 */
@@ -18,9 +13,7 @@ ul {
     width: 100%;
     height: 280px;
     background: url("../img/bg.png")  center ;
-
 }
-
 .nav {
     width: 100%;
     height: 60px;
@@ -28,24 +21,16 @@ ul {
 }
 
 .nav .nav_main {
-    width: 1200px;
     height: 60px;
     line-height: 60px;
-    margin: 0 auto;
 }
-
-.nav_main ul li {
+.nav_main  a {
+    color: #fffefe;
     float: left;
     width: 215px;
     font-size: 16px;
-
 }
-
-.nav_main ul li a {
-    color: #fffefe;
-}
-
-.nav_main ul li:last-child {
+.nav_main a:last-child{
     width: 125px;
 }
 
@@ -86,16 +71,13 @@ ul {
 }
 
 .info .info_main {
-    width: 1200px;
     height: 40px;
-    margin: 0 auto;
 }
 
 .info .info_tip {
     height: 40px;
     line-height: 40px;
     font-size: 15px;
-    float: left;
 }
 
 .info_tip a {
@@ -104,12 +86,9 @@ ul {
     display: inline-block;
     height: 24px;
     line-height: 24px;
-    /* margin-right: 14px; */
 }
 .info_tip a img {
     vertical-align: middle;
-    float: left;
-    border: none;
 }
 .info_tip .announce{
     color: #717171;
@@ -120,7 +99,6 @@ ul {
     color: #c3c3c3
 }
 .info_main .info_search {
-    float: right;
     width: 340px;
     height: 28px;
     position: absolute;
@@ -131,9 +109,6 @@ ul {
 .info_search input {
     width: 270px;
     height: 28px;
-    border: none;
-    outline: none;
-    float: left;
     background: #fff url("../img/search.png") no-repeat 10px center;
     background-size: 19px 18px;
     text-indent: 40px
@@ -143,7 +118,6 @@ ul {
     width: 70px;
     height: 28px;
     background: #115a9c;
-    border: none;
     color: #ffffff
 }
 
@@ -155,19 +129,8 @@ ul {
 }
 
 .banner .banner_main {
-    width: 1200px;
-    margin: 0 auto;
     border-bottom: 2px solid #dedede;
     padding-bottom: 28px;
-
-
-}
-
-.banner .banner_main .banner_main_img {
-    width: 573px;
-    height: 375px;
-    float: left;
-    /* margin-right: 18px; */
 }
 
 .banner .banner_main .banner_message {
@@ -176,7 +139,6 @@ ul {
 }
 
 .banner_message .banner_message_top {
-
     height: 38px;
     padding-right: 62px;
     padding-left: 20px;
@@ -184,7 +146,6 @@ ul {
 }
 
 .banner_message .banner_message_top span {
-    float: left;
     background: #115a9c;
     font-size: 16px;
     color: #ffffff;
@@ -192,7 +153,6 @@ ul {
 }
 
 .banner_message .banner_message_top img {
-    float: right;
     position: relative;
     top: 14px;
 }
@@ -276,19 +236,12 @@ display: -webkit-box;
 .policy {
     width: 100%;
 }
-
-.policy .policy_main {
-    width: 1200px;
-    margin: 0 auto;
-}
-
 .policy .policy_main h1 {
     width: 60px;
     font-size: 28px;
     color: #115a9c;
     line-height: 44px;
     padding: 14px 54px 24px 14px;
-    float: left;
 }
 
 .policy .policy_main .policy_main_report {
@@ -297,7 +250,6 @@ display: -webkit-box;
 
 .policy_main_report li {
     line-height: 54px;
-    /* text-indent: 26px; */
     position: relative;
     width: 280px;
     float: left;
@@ -330,22 +282,12 @@ display: -webkit-box;
     overflow: hidden;
     color: #666666;
     margin-left: 26px;
-
-
 }
 
 /* introduce */
 .introduce {
     width: 100%;
 }
-
-.introduce .introduce_main {
-    width: 1200px;
-    margin: 0 auto;
-    border-bottom: 1px solid #dedede;
-    border-top: 2px solid #115a9c;
-}
-
 .introduce .introduce_main h1 {
     height: 32px;
     line-height: 32px;
@@ -386,12 +328,6 @@ display: -webkit-box;
 }
 
 /* medicine */
-.medicine .medicine_main {
-    width: 1200px;
-    margin: 0 auto;
-    border-top: 2px solid #115a9c;
-}
-
 .medicine .medicine_main .medicine_main_top {
     width: 100%;
     height: 32px;
@@ -404,10 +340,6 @@ display: -webkit-box;
     font-size: 16px;
     float: left;
     padding: 0 10px;
-}
-
-.medicine .medicine_main .medicine_main_top ul {
-    float: left;
 }
 
 .medicine .medicine_main .medicine_main_top a {
@@ -424,14 +356,12 @@ display: -webkit-box;
     float: left;
 }
 
-.medicine_main_list .medicine_main_list_box img {
+.medicine_main_list .medicine_main_list_box img,.operation_main_img img {
     display: block;
     margin: 0 auto;
 }
 
-.operation .operation_main {
-    width: 1200px;
-    margin: 0 auto;
+.operation .operation_main,.medicine .medicine_main,.introduce .introduce_main {
     border-top: 2px solid #115a9c;
     
 }
@@ -456,13 +386,7 @@ display: -webkit-box;
     padding: 32px 0;
     float: left;
 }
-.operation_main_img img{
-    display: block;
-    margin: 0 auto
-}
 .friendLink .friendLink_main{
-    width: 1200px;
-    margin: 0 auto;
     background: #f2f4f5;
 }
 .friendLink_main h1{
@@ -493,8 +417,6 @@ display: -webkit-box;
     margin-top: 46px;
 }
 .footer .footer_main{
-    width: 1200px;
-    margin: 0 auto;
     background: #0d5b9e;
     color: #ffffff;
     text-align: center;
@@ -517,6 +439,12 @@ display: -webkit-box;
 }
 
 
+.nav_link_list{
+    margin-top: 40px;
+}
+.nav_link_list .nav_link{
+
+}
 
 
 
