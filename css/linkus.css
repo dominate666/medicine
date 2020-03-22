@@ -1,0 +1,30 @@
+.linkus_left{
+    width: 30%;
+}
+.linkus_left_top{
+    height: 100px;
+    background: #f0f0f0;
+    padding-left: 20px;
+}
+.linkus_left_top h3{
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.linkus_left ul li{
+    line-height: 80px;
+    border-bottom: 1px solid #dedede;
+}
+.linkus_left ul li img{
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.linkus_right{
+    width: 618px;
+    height: 516px;
+    float: left;
+    background: url("../img/bg_map.png");
+    margin-left: 54px;
+}
+.linkus .friendLink{
+    margin-top: 90px;
+}

@@ -31,6 +31,9 @@ body{
     font-size: 16px;
     text-align: center;
 }
+.nav_main a.on{
+    background:#666;
+}
 .nav_main a:last-child{
     width: 125px;
 }
@@ -69,6 +72,7 @@ body{
     height: 40px;
     background: #e9e9e9;
     position: absolute;
+    margin-bottom: 20px;
 }
 
 .info .info_main {
@@ -125,14 +129,15 @@ body{
 /* banner */
 .banner {
     width: 100%;
-    padding: 20px 0 32px 0;
+    /* padding: 20px 0 32px 0; */
+    padding-bottom: 30px;
     margin-top: 40px;
 }
 
-.banner .banner_main {
+/* .banner .banner_main {
     border-bottom: 2px solid #dedede;
     padding-bottom: 28px;
-}
+} */
 
 .banner .banner_main .banner_message {
     width: calc(100% - 573px);
@@ -247,6 +252,8 @@ display: -webkit-box;
 
 .policy .policy_main .policy_main_report {
     padding-top: 5px;
+    border: 1px solid #dedede;
+    margin-bottom: 30px;
 }
 
 .policy_main_report li {
@@ -289,6 +296,10 @@ display: -webkit-box;
 .introduce {
     width: 100%;
 }
+.introduce .introduce_main{
+    border: 1px solid #dedede;
+    margin-bottom: 28px;
+}
 .introduce .introduce_main h1 {
     height: 32px;
     line-height: 32px;
@@ -329,6 +340,9 @@ display: -webkit-box;
 }
 
 /* medicine */
+.medicine .medicine_main{
+    margin-bottom: 28px;
+}
 .medicine .medicine_main .medicine_main_top {
     width: 100%;
     height: 32px;
@@ -356,6 +370,12 @@ display: -webkit-box;
     padding-bottom: 10px;
     float: left;
 }
+.medicine_main_list .medicine_tab{
+    display: none;
+}
+.bg{
+    background: #ffffff;
+}
 
 .medicine_main_list .medicine_main_list_box img,.operation_main_img img {
     display: block;
@@ -363,7 +383,9 @@ display: -webkit-box;
 }
 
 .operation .operation_main,.medicine .medicine_main,.introduce .introduce_main {
+    /* border: 1px solid #dedede; */
     border-top: 2px solid #115a9c;
+    margin-bottom: 28px;
     
 }
 
@@ -389,6 +411,9 @@ display: -webkit-box;
 }
 .friendLink .friendLink_main{
     background: #f2f4f5;
+    border: 1px solid #dedede;
+    padding: 50px 0;
+    
 }
 .friendLink_main h1{
     height: 32px;
@@ -415,13 +440,13 @@ display: -webkit-box;
 
 /* footer */
 .footer {
-    margin-top: 46px;
+    background: #0d5b9e;
 }
 .footer .footer_main{
-    background: #0d5b9e;
+    
     color: #ffffff;
     text-align: center;
-    padding: 54px 0 66px 0;
+    padding: 54px 0;
 }
 .footer .footer_main a{
     color: #ffffff;
@@ -441,11 +466,120 @@ display: -webkit-box;
 
 
 .nav_link_list{
-    margin-top: 40px;
+    margin-top: 52px;
+}
+.nav_link{
+    display: none;
 }
 .nav_link_list .nav_link{
 
 }
+/* 
+.information{
+   width: 60%;
+   height: 500px;
+   padding-top: 20px;
+   overflow: hidden;
+}
+.information .information_top{
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #dddada;
+}
+.information_top span{
+    float: left;
+    width: 8px;
+    height: 25px;
+    background: url("../img/title.jpg") no-repeat center;
+    margin-top: 5px;
+}
+
+.information_top h2{
+    float: left;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #155c93;
+    font-weight: bold;
+} */
+.ulList {
+    width: 100%;
+    padding-top: 10px;
+}
+.ulList li{
+    overflow: hidden;
+    background: url("../img/square.jpg") left center no-repeat;
+    line-height: 32px;
+    color: #484848;
+    padding-left: 12px;
+}
+.ulList li a{
+    color: #333333;
+    font-size: 14px;
+    width: 470px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ulList li span{
+    font-size: 12px;
+    color: #A4A4A4;
+}
+.ulList li img{
+    width: 203px;
+    height: 189px;
+}
+.menulist{
+    margin-top: 20px;
+}
+.menulist .menu{
+    width: 203px;
+    height: 189px;
+    position: relative;
+    float: left;
+    margin-left: 10px;
+}
+.menulist .menu span a{
+    line-height: 18px;
+    position: absolute;
+    left: 0px;
+    top: 152px;
+    width: 189px;
+    padding: 0 7px;
+    font-size: 12px;
+    color: #ffffff;
+}
+.menulist .menu p{
+    height: 46px;
+    opacity: 0.5;
+    background: #000;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 203px
+}
+.information_report{
+    width: 30%;
+    margin-left: 30px;
+}
+.information_report img{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

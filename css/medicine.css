@@ -1,0 +1,161 @@
+ .medicine_main_t {
+    padding: 22px 0;
+    font-size: 14px;
+    color: #000;
+    border-bottom: 1px solid #dedede;
+}
+
+.medicine_main_content .medicine_main_content_left {
+    width: 72.5%;
+    float: left;
+}
+
+.medicine_main_content .medicine_main_content_right {
+    width: 23%;
+    float: right;
+}
+
+.medicine_main_content_left .medicine_main_content_list {
+    width: 410px;
+    margin-bottom: 40px;
+}
+
+.medicine_main_content_list .img_box {
+    width: 100%;
+    height: 274px;
+}
+
+.medicine_main_content_list>a {
+    display: inline-block;
+}
+
+.medicine_main_content_list p {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.medicine_main_content_left p strong {
+    font-size: 16px;
+    color: #000;
+    float: left;
+}
+
+.medicine_main_content_left p span {
+    color: #666666;
+    font-size: 12px;
+    float: right;
+}
+
+.medicine_main_content_list>a {
+    display: inline-block;
+    font-size: 14px;
+    clear: both;
+    line-height: 30px;
+    color: #7f7f7f;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    
+}
+
+.medicine_main_content_list em{
+    color: #5b82b1;
+    font-style: normal;
+    float: right;
+    /* margin-left: 40px; */
+    font-size: 14px;
+}
+.paging{
+    text-align: center;
+    clear: both;
+    font-size: 0;
+    margin-bottom: 90px;
+}
+.paging span{
+    font-size: 20px;
+     position: relative;
+     top: 2px;
+}
+.paging span:nth-of-type(1){
+    margin-right: 10px;
+}
+.paging span:nth-of-type(2){
+    margin-left: 10px;
+}
+.paging a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+
+}
+.paging a.active{
+    background: #115a9c;
+    color: #ffffff;
+
+}
+
+.medicine_main_content_right h1{
+
+}
+.hot_medicine{
+    line-height: 50px;
+    background: #f3f3f3;
+    position: relative;
+    text-indent: 14px;
+}
+.hot_medicine h1{
+    font-size: 20px;
+    float: left;
+}
+.hot_medicine span{
+   float: left;
+    width: 2px;
+    height: 20px;
+    background: #115a9c;
+    position: absolute;
+    left: 0;
+    top: 16px;
+}
+.hot_medicine img{
+    position: relative;
+    top: 5px;
+}
+.slider_box {
+    padding:15px 0;
+    border: 1px solid #dedede;
+}
+.slider_box  .slider_big{
+    margin: 0 auto;
+    width: 244px;
+    height: 160px;
+    background: url("../img/hot_medicine.png") center;
+    background-size: 100%;
+}
+.slider_box .slider_little{
+    font-size: 0;
+    text-align: center;
+    padding-top: 16px;
+}
+.slider_little img:nth-of-type(2){
+    margin: 0 18px;
+}
+
+.recommand{
+    padding-top: 12px;
+    padding-left: 24px;
+    font-size: 0;
+}
+.recommand a{
+    font-size: 14px;
+    line-height: 36px;
+    display: inline-block;
+    width: 50%;
+    color: #000;
+}
+.recommand a:hover{
+    color: blue;
+    text-decoration: underline;
+}

@@ -1,0 +1,23 @@
+body{
+    height: 2000px;
+}
+.introduce_main h2{
+    font-size: 26px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.introduce_main img{
+    width: 1000px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+.introduce_main>p{
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 32px;
+    margin-top: 20px;
+    color: #888888;
+    font-size: 14px;
+}
