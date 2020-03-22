@@ -39,17 +39,24 @@ body{
 }
 
 /* 公告 */
-.marquee {
+marquee{
+    margin-left: 12px;
+    font-size: 12px;
+    color: #999;
+    overflow: hidden;
+}
+/* .marquee {
     width: 300px;
+    background: red;
     margin: 0 auto;
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
     animation: marquee 50s linear infinite;
     vertical-align: middle;
-}
+} */
 
-.marquee:hover {
+marquee:hover {
     animation-play-state: paused
 }
 
@@ -91,6 +98,8 @@ body{
     display: inline-block;
     height: 24px;
     line-height: 24px;
+    vertical-align: middle;
+    margin-left: 10px;
 }
 .info_tip a img {
     vertical-align: middle;
@@ -221,7 +230,10 @@ display: -webkit-box;
     overflow: hidden;
     margin-left: 16px;
 }
-
+#banner .banner_message_title li a:hover{
+    color: red;
+    text-decoration: underline;
+}
 .banner_message_title span {
     float: right;
     margin-right: 50px;
