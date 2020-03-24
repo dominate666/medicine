@@ -1,0 +1,48 @@
+.operation_detail_main{
+    margin-bottom: 50px;
+}
+.operation_detail .operation_detail_main h1{
+    font-size: 26px;
+    text-align: center;
+}
+.operation_detail_main .date{
+    text-align: center;
+    padding: 25px 0;
+}
+.operation_detail_main .medicine_main_t p{
+    color: #000000;
+}
+
+.operation_detail .date div{
+    display: inline-block;
+    margin-left: 10px;
+}
+.operation_detail .date span{
+    font-size: 12px;
+    color: #dadada;
+}
+.operation_detail_main table{
+    margin: 0 auto;
+}
+.operation_detail_main table tr{
+    height: 70px;
+    text-align: center;
+}
+.operation_detail_main table td:nth-child(2n+1){
+    background: #f7f7f7;
+}
+.operation_detail_main p{
+    line-height: 30px;
+    font-size: 14px;
+}
+.operation_detail_main .list .title{
+   margin-top: 20px;
+}
+.operation_detail_main .list .title h2{
+    font-size: 15px;
+}
+.operation_detail_main .list .title p{
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 20px;
+}

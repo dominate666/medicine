@@ -27,15 +27,17 @@ body{
 .nav_main  a {
     color: #fffefe;
     float: left;
-    width: 215px;
+    /* width: 215px; */
+    width: 14%;
     font-size: 16px;
     text-align: center;
 }
 .nav_main a.on{
-    background:#666;
+    background:#186ebc;
 }
 .nav_main a:last-child{
-    width: 125px;
+    /* width: 125px; */
+    /* width: 20%; */
 }
 
 /* 公告 */
@@ -308,6 +310,9 @@ display: -webkit-box;
 .introduce {
     width: 100%;
 }
+.define_medicine{
+    border: 1px solid #dedede;
+}
 .introduce .introduce_main{
     border: 1px solid #dedede;
     margin-bottom: 28px;
@@ -399,6 +404,9 @@ display: -webkit-box;
     border-top: 2px solid #115a9c;
     margin-bottom: 28px;
     
+}
+.operation .operation_main{
+    border: 1px solid #dedede;
 }
 
 .operation .operation_main h1 {

@@ -1,0 +1,29 @@
+.opertation_content table{
+    margin: 0 auto;
+    
+}
+.opertation_content table tr{
+    width: 100%;
+    
+}
+.opertation_content table thead{
+    height: 76px;
+    line-height: 76px;
+    background: #ebebeb;
+    font-size: 16px;
+}
+.opertation_content table tbody tr{
+    text-align: center;
+    height: 60px;
+    color: blue;
+    font-size: 14px;
+}
+.opertation_content  tbody tr:nth-child(2n+1){
+    background: #fff;
+}
+.opertation_content  tbody tr:nth-child(2n){
+    background: #ebebeb;
+}
+.opertation_content{
+    margin-bottom: 30px;
+}
