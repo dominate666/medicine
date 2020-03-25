@@ -41,15 +41,19 @@
                     </a>
                     <a href="#">
                             <marquee 
-                            scrolldelay="250" direction="up" vspace="5"
+                            scrolldelay="250"  vspace="5"
                             height="30"
                             onMouseOut="this.start()"
                             onMouseOver="this.stop()"
+                            direction="left"
+                            
                             >
-                            <ul>
-                                <li>展示中医药相关产业通知事项展示中医药相关事项</li>
-                                <li>特色药材特色药材特色药材特色药材</li>
-                            </ul>
+                            <a href="#">展示中医药相关产业通知事项展示中医药相关事项</a>
+                            <a href="#">特色药材特色药材特色药材特色药材</a>
+                            <!-- <ul>
+                                <li class="fl" style="margin-right:50px"></li>
+                                <li class="fl"></li>
+                            </ul> -->
                             
                         </marquee>
                         </a>
@@ -144,15 +148,15 @@
                         <h1 class="fl">行业政策</h1>
                         <div class="policy_main_report clearfix">
                             <ul>
-                                <li><a href="#">中医药相关文献报道中医药相关文献报道</a></li>
-                                <li><a href="#">中医药相关文献报道中医药相关文献报道</a></li>
-                                <li><a href="#">中医药相关文献报道中医药相关文献报道</a></li>
+                                <li><a href="indusrty.html">中医药相关文献报道中医药相关文献报道</a></li>
+                                <li><a href="indusrty.html">中医药相关文献报道中医药相关文献报道</a></li>
+                                <li><a href="indusrty.html">中医药相关文献报道中医药相关文献报道</a></li>
 
                             </ul>
                             <ul>
-                                <li><a href="#">中医药相关文献报道中医药相关文献报道</a></li>
-                                <li><a href="#">中医药相关文献报道中医药相关文献报道</a></li>
-                                <li><a href="#">中医药相关文献报道中医药相关文献报道</a></li>
+                                <li><a href="indusrty.html">中医药相关文献报道中医药相关文献报道</a></li>
+                                <li><a href="indusrty.html">中医药相关文献报道中医药相关文献报道</a></li>
+                                <li><a href="indusrty.html">中医药相关文献报道中医药相关文献报道</a></li>
                             </ul>
                         </div>
                     </div>
@@ -341,12 +345,6 @@
     });
 </script>
 <script>
-    // let nav_main_as = $(".nav_main a")
-    // let nav_links = $(".nav_link_list .nav_link")
-    // nav_main_as.click(function () {
-    //     let i = $(this).index();
-    //     nav_links.eq(i).show().siblings().hide();
-    // })
 
     let lis=$(".medicine_main_top ul li")
     let medicine_tabs=$(".medicine_main_list .medicine_tab")
@@ -355,5 +353,15 @@
         $(this).addClass("bg").siblings().removeClass("bg")
         $(this).css({cursor:"pointer"})
         medicine_tabs.eq(index).show().siblings().hide();
+    })
+
+    let li_hovers=$(".banner_message_title li")
+    li_hovers.mouseenter(function(){
+        $(this).find("a").css({color:"red",textDecoration:"underline"})
+        $(this).find("span").css({color:"red"})
+    })
+    li_hovers.mouseleave(function(){
+        $(this).find("a").css({color:"",textDecoration:"none"})
+        $(this).find("span").css({color:""})
     })
 </script>
