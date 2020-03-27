@@ -103,6 +103,12 @@ input {
     position: relative;
     padding-left: 16px;
 }
+ .page_right li a:hover{
+    color: #B20000;
+}
+.page_right .hot_medicine{
+    margin-bottom: 12px;
+}
 
 .page_right_list_box .con p {
     overflow: hidden;
@@ -138,7 +144,8 @@ input {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: blueviolet;
+    /* background: blueviolet; */
+    background: url("../img/1.png");
     left: 0;
     top: 15px;
 
@@ -150,8 +157,10 @@ input {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 12px;
+    font-size: 15px;
+    font-family: 'Microsoft yahei',宋体;
     color: #000;
+    text-decoration: none
 }
 
 .page_content {

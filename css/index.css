@@ -158,7 +158,7 @@ display: -webkit-box;
 #banner .banner_message_title li a {
     float: left;
     color: #666666;
-    width: 200px;
+    width: 430px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -268,7 +268,7 @@ display: -webkit-box;
     float: right;
     position: relative;
     top: 8px;
-    margin-right: 70px;
+    margin-right: 34px;
 }
 
 .introduce_main_detail .introduce_main_img {
@@ -310,8 +310,11 @@ display: -webkit-box;
 .medicine .medicine_main .medicine_main_top a {
     float: right;
     position: relative;
-    top: 8px;
-    margin-right: 70px;
+    top: 4px;
+    /* margin-right: 34px; */
+}
+.medicine .medicine_main .medicine_main_top a img{
+    margin-right: 34px;
 }
 
 .medicine_main_list .medicine_main_list_box {
@@ -355,7 +358,7 @@ display: -webkit-box;
     float: right;
     position: relative;
     top: 8px;
-    margin-right: 70px;
+    margin-right: 34px;
 }
 .operation_main_img{
     width: 25%;

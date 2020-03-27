@@ -13,7 +13,8 @@
     clear: both;
 }
 
-.news_content_left p {
+.news_content_left p a{
+    display: block;
     font-size: 12px;
     color: #888888;
     line-height: 30px;
@@ -23,23 +24,34 @@
     width: calc(100% - 250px);
 }
 
-.news_content_left .experience a {
+.news_content_left .experience .description a {
     padding: 6px 22px;
     background: #ffffff;
     font-size: 12px;
-    margin: 20px 0 20px 20px;
+    /* margin: 20px 0 20px 20px; */
     float: left;
     border: 1px solid #dedede;
 }
 
-.news_content_left .enterprise h2 {
+.news_content_left .enterprise h2 a{
     float: left;
     font-size: 16px;
+    color: #000;
     /* margin-top: 30px; */
 }
 
 .news_content_left .enterprise span {
     float: right;
+    color: #808080;
+    font-size: 12px;
+}
+.news_content_left .description {
+    /* line-height: 30px; */
+    padding: 20px 0 20px 20px;
+}
+.news_content_left .description span{
+    float: right;
+    line-height: 30px;
     color: #808080;
     font-size: 12px;
 }
