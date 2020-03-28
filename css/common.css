@@ -111,13 +111,27 @@ input {
 }
 .page_right_list_box .con p a{
     display: block;
-    width: 100%;
+    width: 132px;
+    /* line-height: 20px; */
+    position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    height: 40px;
+    
 }
+/* .page_right_list_box .con p a::after{
+    content: "...";
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    background: -moz-linear-gradient(right, transparent, #fff 55%);
+    
+   
+
+} */
 .page_right_list_box .con a{
     color: #000;
 }
@@ -148,11 +162,10 @@ input {
 .page_right li::before {
     content: "";
     position: absolute;
-    width: 9px;
-    height: 9px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
-    /* background: blueviolet; */
-    background: url("../img/1.png");
+    background: blueviolet;
     left: 0;
     top: 15px;
 

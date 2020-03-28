@@ -46,9 +46,8 @@
                                 <!-- <span>2020-02-03</span> -->
                             </div>
                             <p>
-                                <a href="policyDetail.html">
-                                    产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用
-                                    产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用</a>
+                                <a href="policyDetail.html" class="news_multiple">产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用
+                                </a>
                             </p>
                             <div class="description clearfix">
                                 <a href="policyDetail.html">描述</a>
@@ -68,9 +67,8 @@
                                 <!-- <span>2020-02-03</span> -->
                             </div>
                             <p>
-                                <a href="policyDetail.html">
-                                    产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用
-                                    产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用</a>
+                                <a href="policyDetail.html" class="news_multiple">产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用
+                                </a>
                             </p>
                             <div class="description clearfix">
                                 <a href="policyDetail.html">描述</a>
@@ -90,9 +88,8 @@
                                 <!-- <span>2020-02-03</span> -->
                             </div>
                             <p>
-                                <a href="policyDetail.html">
-                                    产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用
-                                    产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用</a>
+                                <a href="policyDetail.html" class="news_multiple">产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用产业联盟使用
+                                </a>
                             </p>
                             <div class="description clearfix">
                                 <a href="policyDetail.html">描述</a>
@@ -100,6 +97,7 @@
                             </div>
                         </div>
                     </div>
+                   
 
 
 
@@ -129,7 +127,7 @@
                                 <div class="con">
                                     <p>
 
-                                        <a href="#">
+                                        <a href="#" class="multiple">
                                             再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑
                                         </a>
                                     </p>
@@ -144,7 +142,7 @@
                                 <div class="con">
                                     <p>
 
-                                        <a href="#">
+                                        <a href="#" class="multiple">
                                             再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑
                                         </a>
                                     </p>
@@ -159,7 +157,7 @@
                                 <div class="con">
                                     <p>
 
-                                        <a href="#">
+                                        <a href="#" class="multiple">
                                             再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑
                                         </a>
                                     </p>
@@ -174,7 +172,7 @@
                                 <div class="con">
                                     <p>
 
-                                        <a href="#">
+                                        <a href="#" class="multiple">
                                             再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑再生建筑
                                         </a>
                                     </p>
@@ -241,3 +239,27 @@
 </body>
 
 </html>
+<script src="js/jquery.js"></script>
+<script>
+    $(function () {
+            $(".multiple").each(function () {
+                let width = parseInt($(this).css("width"));
+                let fontSize = parseInt($(this).css("fontSize"));
+                let numPerLine = Math.floor(parseInt(width / fontSize)) * 2
+                let text = $(this).text().trim();
+                $(this).text(text.substring(0,numPerLine-1)+"...")
+            })
+            $(".news_multiple").each(function () {
+                let width = parseInt($(this).css("width"));
+                let fontSize = parseInt($(this).css("fontSize"));
+                let numPerLine = Math.floor(parseInt(width / fontSize)) * 2;
+                console.log($(this).text().replace(/\s/,""))
+                let text = $(this).text().trim();
+                $(this).text(text.substring(0,numPerLine-1)+"...")
+            })
+            
+        })
+ 
+
+
+</script>
