@@ -27,3 +27,33 @@
 .opertation_content{
     margin-bottom: 30px;
 }
+.opertation_content .page_right{
+    float: left;
+}
+.opertation_content .page_left{
+    float: right;
+    width: 72.5%;
+    /* border: 1px solid #000; */
+}
+.piclist{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.piclist li{
+    background: none;
+    width: 224px;
+    height: 200px;
+    float: left;
+    margin: 0 22px;
+    display: inline;
+    overflow: hidden;
+    text-align: center;
+    line-height: 160%;
+}
+.piclist li a:hover{
+   color: #F24934;
+   text-decoration: underline;
+}
+.piclist li a{
+    color: #000;
+}

@@ -23,7 +23,9 @@
 .news_content_left .experience {
     width: calc(100% - 250px);
 }
-
+.news_content_left .experience:hover p>a{
+    color: #b20000
+}
 .news_content_left .experience .description a {
     padding: 6px 22px;
     background: #ffffff;
