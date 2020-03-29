@@ -417,6 +417,7 @@ display: -webkit-box;
 }
 .operation_main_img:hover .operation_main_img_mask{
     opacity: .4;
+    filter:alpha(opacity=40)
 }
 .operation_main_img .operation_main_img_mask{
     width: 100%;
@@ -426,6 +427,7 @@ display: -webkit-box;
     top: 0;
     background: #000;
     opacity: 0;
+    filter:alpha(opacity=0);
     transition: all .5s;
 }
 .friendLink .friendLink_main{
@@ -520,6 +522,7 @@ display: -webkit-box;
 .menulist .menu p{
     height: 46px;
     opacity: 0.5;
+filter:alpha(opacity=50);
     background: #000;
     position: absolute;
     bottom: 0px;
