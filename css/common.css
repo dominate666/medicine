@@ -19,6 +19,9 @@ input {
     border: none;
     outline: none;
 }
+button{
+    border:0;
+}
 .tab{
     display: none;
 }

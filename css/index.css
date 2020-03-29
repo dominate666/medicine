@@ -47,7 +47,7 @@ marquee{
     color: #c3c3c3
 }
 .info_main .info_search {
-    width: 340px;
+    /* width: 340px; */
     height: 28px;
     position: absolute;
     top: 6px;
