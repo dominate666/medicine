@@ -73,16 +73,16 @@
                     <div class="banner_main main_width clearfix">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
+                                <div class="swiper-slide banner_slide">
                                     <img src="img/left_pic.png" alt="" width="100%" height="100%">
 
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide banner_slide">
                                     <img src="img/left_pic.png" alt="" width="100%" height="100%">
 
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="img/left_pic.png" alt="" width="100%" height="100%">
+                                <div class="swiper-slide banner_slide">
+                                    <img src="img/news_list_right.png" alt="" width="100%" height="100%">
 
                                 </div>
 
@@ -90,9 +90,17 @@
                             <!-- Add Pagination -->
                             <div class="swiper-pagination"></div>
 
-                            <!-- mask -->
-                            <div class="mask">
-                                <a href="#">中中医药相关文献报道中医药相关文献报道中中医药相关文献报道中医药相关文献报道</a>
+                            <div class="mask_box">
+                                <!-- mask -->
+                                <div class="mask">
+                                    <a href="#">中中医药相关文1111</a>
+                                </div>
+                                <div class="mask">
+                                    <a href="#">中中医药相关文献2222</a>
+                                </div>
+                                <div class="mask">
+                                    <a href="#">中中医药相关文献报3333</a>
+                                </div>
                             </div>
 
                         </div>
@@ -114,8 +122,8 @@
                                 </p>
                                 <ul class="clearfix">
                                     <li>
-                                        <a
-                                            href="javasript:void" class="">中中医药相关文献报道中医药相关文献报道中中医药相关文献报道中医药相关文献报道中中医药相关文献报道中医药相关文献报道</a>
+                                        <a href="javasript:void"
+                                            class="">中中医药相关文献报道中医药相关文献报道中中医药相关文献报道中医药相关文献报道中中医药相关文献报道中医药相关文献报道</a>
                                         <span>2020-03-3</span>
                                     </li>
                                     <li>
@@ -206,7 +214,7 @@
                             <div class="medicine_tab clearfix" style="display:block">
                                 <div class="medicine_main_list_box">
                                     <a href="#">
-                                        <img src="img/medicine.png" alt="" width="210px" height="210px">
+                                        <img src="img/news_list_right.png" alt="" width="210px" height="210px">
                                         <span>中药</span>
                                         <div class="medicine_main_list_box_mask">
                                         </div>
@@ -377,16 +385,24 @@
 </html>
 <script src="js/swiper.js"></script>
 <script src="js/jquery.js"></script>
+<script src="js/defineSwiper.js"></script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        autoplay: true,
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-        },
+    // var swiper = new Swiper('.swiper-container', {
+    //     autoplay: true,
+    //     loop: true,
+    //     pagination: {
+    //         el: '.swiper-pagination',
+    //         clickable: true
+    //     },
 
-    });
+    // });
+    // let slides=$(".swiper-wrapper .banner_slide")
+    // let masks=$(".swiper-pagination .mask");
+    // Array.from(slides).forEach((item,index)=>{
+    //     let index=$(this).index();
+    //     masks.eq(index).css({display:"block"}).siblings().css({display:"none"})
+    // })
+    // console.table("slides",typeof slides)
 </script>
 <script>
     let lis = $(".medicine_main_top ul li")
@@ -426,15 +442,15 @@
     })
 </script>
 <script>
-    $(function () {$(".multiple").each(function () {
-                let width=parseInt($(this).css("width"));
-                let fontSize=parseInt($(this).css("fontSize"));
-                let numPerLine=Math.floor(parseInt(width/fontSize))*3
-                let text=$(this).text();
-                let finalTest=text.trim().substring(numPerLine-1)
-                let newText= $(this).text().replace(finalTest,"...")
-                $(this).text($(this).text().substring(0,numPerLine)+newText)
-                console.log($(this).text())
-            })
+    $(function () {
+        $(".multiple").each(function () {
+            let width = parseInt($(this).css("width"));
+            let fontSize = parseInt($(this).css("fontSize"));
+            let numPerLine = Math.floor(parseInt(width / fontSize)) * 3
+            let text = $(this).text();
+            let finalTest = text.trim().substring(numPerLine - 1)
+            let newText = $(this).text().replace(finalTest, "...")
+            $(this).text($(this).text().substring(0, numPerLine) + newText)
+        })
     })
 </script>

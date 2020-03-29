@@ -5,7 +5,7 @@
   margin: 0;
   float: left;
 }
-.swiper-container .mask{
+.swiper-container .mask_box{
   width: 100%;
   height: 36px;
   line-height: 36px;
@@ -14,9 +14,16 @@
   left: 0;
   bottom: 0;
   z-index: 1;
-  padding-left: 20px;
   cursor: pointer;
   opacity: 0.8;
+  /* background: rgba(0,0,0,.4); */
+}
+.swiper-container .mask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .swiper-container .mask a{
     color: #ffffff;
@@ -26,13 +33,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-left: 20px;
    
-}
-.swiper-wrapper{
-
-}
-.swiper-slide swiper-slide-active{
-
 }
 .swiper-slide {
   text-align: center;
