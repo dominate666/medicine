@@ -3,12 +3,13 @@
     height: 38px;
     border-bottom: 1px solid #D7D0B2;
     position: relative;
+    padding: 10px 0;
 }
 .information_content .information_ul li::before{
     content: "";
     position: absolute;
     left: 0;
-    top: 16px;
+    top: 26px;
     width: 6px;
     height: 6px;
     background: #115a9c;
@@ -19,16 +20,20 @@
     font-size: 16px;
     color: #000;
     float: left;
-    width: 716px;
+    width: 715px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    letter-spacing: 2px;
+}
+.information_content .information_ul li:hover span{
+    color: #B20000;
 }
 .information_content .information_ul li a:hover{
     color: #B20000
 }
 .information_content .information_ul li span{
     font-size: 12px;
-    color: #B20000;
+    color: #666;
     float: right;
 }
