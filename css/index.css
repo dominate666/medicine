@@ -165,6 +165,7 @@ display: -webkit-box;
     text-overflow: ellipsis;
     overflow: hidden;
     margin-left: 16px;
+    letter-spacing: 2px;
 }
 .hover{
     color:red;
@@ -241,6 +242,7 @@ display: -webkit-box;
     overflow: hidden;
     color: #666666;
     margin-left: 26px;
+    letter-spacing: 2px;
 }
 
 /* introduce */

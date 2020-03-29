@@ -1,9 +1,9 @@
 let masks = $(".mask_box .mask");
 var swiper = new Swiper('.swiper-container', {
-    // autoplay: {
-    //     disableOnInteraction: false, //手动滑动之后不打断播放
-    //     delay: 1000
-    // },
+    autoplay: {
+        disableOnInteraction: false, //手动滑动之后不打断播放
+        delay: 1000
+    },
     loop: true,
     on: {
         transitionStart: function () {
