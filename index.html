@@ -40,13 +40,14 @@
                         <img src="img/tell.png" alt="" class="fl">
                         <span class="announce">通知公告</span>
                     </a>
-                    <a href="#">
+                    <!-- new_add -->
+                    <span>
                         <marquee scrolldelay="250" vspace="5" height="30" onMouseOut="this.start()"
                             onMouseOver="this.stop()" direction="left">
                             <a href="information.html">·&nbsp;特色药材特色药材特色药材特色药材</a>
                             <a href="information.html">·&nbsp;展示中医药相关产业通知事项展示中医药相关事项</a>
                         </marquee>
-                    </a>
+                    </span>
                 </div>
                 <div class="info_search">
                     <form>
@@ -206,7 +207,11 @@
                                 <li class="bg">特色中药</li>
                                 <li>特色中成药</li>
                             </ul>
-                            <a href="#"><img src="img/more.png" alt=""></a>
+                            <!-- new_add -->
+                            <div style="float:right" class="medicine_more">
+                                <a href="#" style="display:block"><img src="img/more.png" alt=""></a>
+                                <a href="#"><img src="img/more.png" alt=""></a>
+                            </div>
                         </div>
                         <div class="medicine_main_list">
                             <div class="medicine_tab clearfix" style="display:block">
@@ -385,6 +390,7 @@
 <script src="js/jquery.js"></script>
 <script src="js/defineSwiper.js"></script>
 <script>
+    let more_as=$(".medicine_more a")
     let lis = $(".medicine_main_top ul li")
     let medicine_tabs = $(".medicine_main_list .medicine_tab")
     lis.mouseenter(function () {
@@ -395,6 +401,11 @@
         })
         medicine_tabs.eq(index).css({
             display: "block"
+        }).siblings().css({
+            display: "none"
+        })
+        more_as.eq(index).css({
+            display:"block"
         }).siblings().css({
             display: "none"
         })
@@ -421,9 +432,9 @@
         })
     })
 
-   $("#btn").click(function(e){
-       e.preventDefault()
-   })
+    $("#btn").click(function (e) {
+        e.preventDefault()
+    })
 </script>
 
 <script>
