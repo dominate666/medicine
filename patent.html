@@ -262,7 +262,6 @@
     let mas = $(".medicine_top a")
     let medicine_contents = $(".medicine_content_box .medicine_content")
     mas.click(function () {
-        console.log($(this))
         let index = $(this).index();
         $(this).addClass("active").siblings().removeClass("active")
         medicine_contents.eq(index).show().siblings().hide()

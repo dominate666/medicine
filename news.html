@@ -254,7 +254,6 @@
                 let width = parseInt($(this).css("width"));
                 let fontSize = parseInt($(this).css("fontSize"));
                 let numPerLine = Math.floor(parseInt(width / fontSize)) * 2;
-                console.log($(this).text().replace(/\s/,""))
                 let text = $(this).text().trim();
                 $(this).text(text.substring(0,numPerLine-1)+"...")
             })
